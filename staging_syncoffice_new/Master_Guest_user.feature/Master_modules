@@ -1,0 +1,423 @@
+Feature: master_Modules
+##-----------------Company Location--------------------------------------------------------
+  Scenario: Add Company Location
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And should display company Location page
+    Then click on Add button should open Add company Location
+    When Fill all the mandatory field should enable save button
+    Then on click on save button data should save
+    And    Search company Location which is currently added
+    And     Delete company Location
+    Then download pdf and excel files
+
+
+##---------------Bank Details-----------------------------------------------------------------
+
+  Scenario: Add button Bank Details
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on general
+    And  should display Bank Details page
+    Then click on Add button should open Bank Details
+    Then Enter Bank Name
+    And Enter Branch Name
+    And Enter Branch IFSC code
+    And Enter Current AC Number
+    And SWIFT Code on Bank Details
+    And Enter Description on Bank Details
+    Then  click on save button on
+    And    Search Bank Details which is currently added
+    And     Delete Bank Details which is currently added
+    Then download Excel  files
+
+
+
+
+
+##---------------------Individual Reminder-------------------------------------------------------------------------
+  Scenario: Add Individual Reminder
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on general
+    And Click on Individual Reminder tab
+    Then Click add button on Individual Reminder
+    Then Enter Reminder Date
+    And Select  the Client
+    And Enter the Time for Individual Reminder
+    And Enter ReminderTask on Individual Reminder
+    Then Enter Description on Individual Reminder
+    Then Select Repeat options
+    Then Select Notify options
+    Then click on save Button and should display successful pop up
+    Then Search Individual Reminder which is currently added
+    Then Delete Individual Reminder which is currently added
+
+
+
+
+##-----------Group Reminder--------------------------------------------------------------------------------
+
+  Scenario: Group Reminder
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on general
+    And Click on Group Reminder tab
+    Then Click add button on Group Reminder
+    Then Select the Employee for Group Reminder
+    And Select  the Client for Group Reminder
+    And Enter the Time for Group Reminder
+    And Enter ReminderTask on Group Reminder
+    Then Enter Description on Group Reminder
+    Then Select Repeat options
+    Then Select Notify options
+    Then click on save Button and should display successful pop up
+    Then Search Group Reminder which is currently added
+    Then Delete Group Reminder which is currently added
+
+
+
+##4 Emplyee list----------------------------------------------------------------------------------------------
+  Scenario: Add Employee List
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+  ##  And mouse over on Employee tab
+    And Click on Employee List tab
+    Then Click add button on Employee List
+    Then Select basic information option
+    And Enter All mendetry fields on basic information
+    Then Select basic Company Related option
+    And Enter All mendetry fields on Company Related
+    Then Search Employee List which is currently added
+    Then Delete Employee List which is currently added
+
+
+
+  Scenario:Add Guest user
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+  ##  And Mouse over on module list
+    And click on Guest_user Module
+    And click on Guest_user sub module
+    And Guest user page should display
+    And click on add button
+    And Enter All mendetry fields
+    Then click on save Button and should display successful pop up
+    Then download Excel  files
+
+
+
+
+  Scenario: Add Employee Type
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And click on add button Existing Employee Type page should display
+    Then again click on add button Employee Type page should display
+    Then Enter Depatment(Employee Type)
+    Then Enter Description(Employee Type)
+    Then save and varify
+    Then download Excel  files
+
+
+
+
+  Scenario: Add Employee Grade
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And click on add button Existing Employee Grade page should display
+    Then again click on add button Employee Grade page should display
+    Then Enter Depatment(Employee Grade)
+    Then Enter Description(Employee Grade)
+    Then save and varify
+    Then download Excel  files
+
+
+
+
+
+
+  Scenario: Add Designation
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on  desigation tab
+    And click on add button Existing Designations page should display
+    Then again click on add button Add Designation page should display
+    Then Enter Designation
+    Then Enter Description
+    Then save and varify
+
+
+
+
+
+
+
+
+##2...Employee_To_Client----------------------------------------------------------------------------------------------
+
+
+##3.......Employee_To_Client----------------------------------------------------------------------------------------------
+
+  Scenario: To Assign guest user to client
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+  ##  And Mouse over on module list
+    And click on Guest_user Module
+    Then Click on Assign Guest User submodule
+    Then Select the Guest User field
+    Then Client, Location(s), Department(s)
+    Then click on Submit_button to Assign the CGuest Users to Client
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Scenario: add department
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on  Depatment tab
+    And click on add button Existing Depatment page should display
+    Then again click on add button Add Depatment page should display
+    Then Enter Depatment
+    Then Enter Description
+    Then save and varify
+    Then download Excel  files
+
+
+
+  Scenario: GL Category(client)
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And CLick on add button on client
+    And 	Click on GL Category(client)
+    And 	Click on Add Button on GL Category(client)
+    And 	Enter Name on Add Account Category Drawer(client)
+    And  	Enter Description on Account Category Drawer(client)
+    And     save Gl category(client)
+    And     Search Gl category which is currently added(client)
+    And     Delete Gl category(client)
+    Then download Excel  files
+
+
+
+
+
+  Scenario: add clients
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+   ## And Mouse over on module list
+    And CLick on add button on client
+    And CLick on add button on client icon
+    Then Add client page should display
+    Then Select the SERVICE TYPE option
+    Then fill all mendotry fields in SERVICE TYPE on client tab and click on save button
+    Then Select the GENERAL option
+    Then fill all mendotry fields in GENERAL tab and click on save button
+    Then Select the LOCATION option
+    Then fill all mendotry fields in LOCATION tab and click on save button
+    Then Select the ADMIN option
+    Then fill all mendotry fields in ADMIN tab and click on save button
+    Then  varify
+
+
+
+
+
+  Scenario: To add Client location
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And CLick on add button on client
+    Then Select the Client from Client Location(master)
+    Then Enter Location Name(master)
+    Then Select Contact Person(master)
+    Then Select Department for Client(master)
+    Then Enter address for Client(master)
+    Then Enter City ,State,Country(master)
+    Then Enter email id ,number for client(master)
+    Then  varify
+    Then download pdf and excel files
+
+
+
+  Scenario: To Assign Selected Staff to Clients
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+   # And Mouse over on module list
+    Then Click on Roles and Permissions tab
+    And Click on Staff to Client
+    When Select Client from the list
+    Then Select Staff to Assign
+    Then Select Locations of Selected Client
+
+
+  Scenario: To  Add Staff
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+   ## And Mouse over on module list
+    And CLick on add button on client
+    Then Select the Client from Add Staff page(master)
+    Then Enter mail id,First name,Middile name ,last name, Number
+    Then click on Allow Login checkbox
+    Then save and varify
+    Then download pdf and excel files
+
+
+
+  Scenario: To add Client location
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    ##And Mouse over on module list
+    And CLick on add button on client
+    And Click on Add client request
+    And Enter All mendetry fields for client request
+    Then Go to Team Log tab
+    Then Perform Aprrove and Reject function
+
+
+
+
+
+  Scenario: Register_varible_data
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    ##And Mouse over on module list
+    Then  click  on Register Varible data
+    Then page "Variable Data" should display
+    Then Click on Add button on Register Varible data
+    And Registraion value data
+    Then Enter the Doucument name
+    And Click on save button
+
+
+  Scenario: Roles_and_permission__Employee_To_Client
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+  ##  Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+   ## And  click on client should open list
+    Then Click on Roles and Permissions tab
+    And Click on Add Employee_To_Client
+    Then Select the Client
+    Then Select the Location
+    Then Select the Department
+    And Click on save button
+
+
+
+  Scenario: To Assign Selected Staff a permissions
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+  ##  Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+   ## And Mouse over on module list
+    Then Click on Roles and Permissions tab
+    Then Click on Client Name to give Permissions
+    Then Select the type of permissions
+    Then Click on Submit Button
+
+
+  Scenario: To Assign Selected Employees to the Company
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+   ## And Mouse over on module list
+    Then Click on Roles and Permissions tab
+    And Click on Employee to Company
+    When  Select Employee Company,Departments
+    Then Click On Submit To Assign the Selected Company
+
+
+  Scenario: add password
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And click on my profile

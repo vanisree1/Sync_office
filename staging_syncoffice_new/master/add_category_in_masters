@@ -1,0 +1,18 @@
+Feature: master_syncoffice
+  Scenario: add clents
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And CLick on add button on client
+    And 	Click on GL Category(client)
+    And 	Click on Add Button on GL Category(client)
+    And 	Enter Name on Add Account Category Drawer(client)
+    And  	Enter Description on Account Category Drawer(client)
+    And     save Gl category(client)
+    And     Search Gl category which is currently added(client)
+    And     Delete Gl category(client)
+    Then download Excel  files
+
+

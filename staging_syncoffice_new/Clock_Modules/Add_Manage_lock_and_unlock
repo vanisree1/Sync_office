@@ -1,0 +1,16 @@
+Feature: Clock Modules
+  Scenario: To add Duration file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then click on Managelock,unlock Icon
+    Then click on Add Managelock,unlock button
+    Then Add Manage Unlock,Lock page should display
+    Then Select the Employee
+    Then Enter Start date, End date,Auto date
+    Then enter discription
+    Then click on Add button then Emplyee will add suessesfully in the list
+

@@ -1,0 +1,13 @@
+Feature: To Request and Assignment to the Company
+  Scenario:Upload Files to the Selected Location - Header Option Icon
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on Client Cloud
+    And Click on Assign Icon(client)
+    Then Select either All Company or Select Company - Location - Department to request
+    Then Select the Select the Reporting Authority to to send request to
+    Then Click on Save

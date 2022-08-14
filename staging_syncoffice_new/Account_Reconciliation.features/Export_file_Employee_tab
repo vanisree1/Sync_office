@@ -1,0 +1,15 @@
+Feature: Add employee
+  Scenario: To Add Employee
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    And  	Hover on Right Side panel Employee
+    And 	Click on Employee tab(import)
+    And   Click on Export icon
+    And    Select the file from the Employee list
+    And click on Arrow button
+    Then Download Excel file
+    Then select download and save template tab
+

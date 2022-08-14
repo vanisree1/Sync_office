@@ -1,0 +1,23 @@
+Feature: master_syncoffice
+  Scenario: add  Employee List
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on Employee tab
+    And Click on Employee List tab
+    Then Click add button on Employee List
+    Then Select basic information option
+    And Enter All mendetry fields on basic information
+    Then Select basic Company Related option
+    And Enter All mendetry fields on Company Related
+    Then Search Employee List which is currently added
+    Then Delete Employee List which is currently added
+
+
+
+
+
+

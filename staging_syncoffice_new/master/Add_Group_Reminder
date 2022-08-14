@@ -1,0 +1,21 @@
+Feature: add Reminder
+  Scenario: Add Group Reminder
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on general
+    And Click on Group Reminder tab
+    Then Click add button on Group Reminder
+    Then Select the Employee for Group Reminder
+    And Select  the Client for Group Reminder
+    And Enter the Time for Group Reminder
+    And Enter ReminderTask on Group Reminder
+    Then Enter Description on Group Reminder
+    Then Select Repeat options
+    Then Select Notify options
+    Then click on save Button and should display successful pop up
+    Then Search Group Reminder which is currently added
+    Then Delete Group Reminder which is currently added

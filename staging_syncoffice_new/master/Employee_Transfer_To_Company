@@ -1,0 +1,15 @@
+Feature: master_syncoffice
+  Scenario: add  Employee List
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And    I enter UserName "damawalemidc@gmail.com" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And Click on Employee List tab
+    And Click on checkbox
+    And Click on Employee Transfer
+    And Select Group company
+    Then Enter Badge code
+    Then Enter All mendetry fields in (Employee Transfer)page
+    Then click on save tab

@@ -1,0 +1,26 @@
+Feature: Report modules
+  Scenario: To_view_download_and_share_Bank_details_in_Report_module
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Report module
+    Then Report page should display
+    Then mouse over on master tab
+    Then click on favourites option on Employee to cient
+    Then Click on view button Employee To Client tab
+    Then Click on checkbox from view list
+    Then Click on download button
+    Then Click on coloum Selection option
+    Then Select the coloums and click on save button
+    Then Click on share button(Report)
+    Then  Enter email id and click on send button
+    ##Then click on download button and Excel file
+    Then Click on Cancel button(Employee To Client)
+    Then mouse over on download option and click on download
+    Then Select the file from the view list
+    And click on Arrow button
+    Then Download Excel file
+    Then select download and save template tab
+    Then Remove from favourites list

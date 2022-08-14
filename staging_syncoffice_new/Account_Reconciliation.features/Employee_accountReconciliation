@@ -1,0 +1,35 @@
+Feature: Add employee
+  Scenario: To Add Employee
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    And  	Hover on Right Side panel Employee
+    And 	Click on Employee
+    And 	Click on Add Icon on Add Employee Drawer
+    And 	Enter First Middle and Last Name
+    And 	Select Legal Entity to add the Employee in
+    And 	Enter the Badge Code
+    And 	Click and Select the Date of Joining
+    And 	Click and Select the Date of Birth Official and Actual
+    And 	Select the Gender
+    And 	Select the Department to Assign with Employee
+    And 	Select the Designation to Assign with Employee
+    And 	Select the Location to Assign with Employee
+    And 	Enter the Mobile Number
+    And 	Enter the Official Email
+    Then  	Click on Save
+
+
+
+
+
+
+
+
+
+
+
+
+

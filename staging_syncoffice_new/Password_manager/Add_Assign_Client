@@ -1,0 +1,11 @@
+Feature: password manager
+  Scenario: To Assign client
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "abc@123"
+    And    I Click on login page
+    And Click on Password Manager tab
+    And Click on Assign client Icon
+    And Select the client(PM)
+    And Click on submit (PM)

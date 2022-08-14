@@ -1,0 +1,17 @@
+Feature: Employee_to_client
+  Scenario: Roles_and_permission__Employee_To_Client
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+  ##  Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+   ## And  click on client should open list
+    Then Click on Roles and Permissions tab
+    And Click on Add Employee_To_Client
+    Then Select the Client
+    Then Select the Location
+    Then Select the Department
+    And Click on save button
+
+

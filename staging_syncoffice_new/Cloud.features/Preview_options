@@ -1,0 +1,10 @@
+Feature: Cloud modules
+  Scenario:Upload files to the Selected Location -
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-website/login"
+    And I enter UserName "wagdalebalaji@gmail.com" And Password "Creta_123"
+    And I Click on login page
+    And Click on Cloud
+    Then Click on My Cloud
+    Then Click on preview folder
+    Then view all the options

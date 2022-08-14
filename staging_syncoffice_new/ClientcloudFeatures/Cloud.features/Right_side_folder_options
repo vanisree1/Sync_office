@@ -1,0 +1,17 @@
+Feature: To Zip & Mail Any Folder from the Tree Structure
+  Scenario:Right_side_folder_options
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "chichkotebalaji@gmail.com" And Password "123456"
+    And  I Click on Login
+    And Click on Cloud
+    Then Click on Client Cloud
+    Then Right Click on folder to see the Details
+    Then Create folder
+  Then uplaod folder
+  Then Rename folder
+  Then Download file
+  Then click on details icon and see the Details
+  Then Click on Folder Access icon and give Access to particular user
+    Then Click on mail tab enter mail id  click on sent button
+

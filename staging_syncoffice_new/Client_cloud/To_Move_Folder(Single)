@@ -1,0 +1,34 @@
+Feature: To Move Folder
+  Scenario: To Move folder
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    Then Select the Department in list
+    Then Click on checkbox
+    Then Click on move option
+    Then Select the location to move
+    Then Go to the move location
+    Then Select the file from move location
+    Then click on copy option
+    Then click on copy button
+    And Click on Move
+    Then Verify
+
+##(//*[text()="Mumbai"])[2]
+  ##    (//*[text()="move_to_inbox"])[1]
+  # (//*[text()="Pune"])[4]
+
+
+  ##   (//*[text()="Move"])[3]
+
+  ##  (//*[text()="Pune"])[2]
+ ## //*[@type="checkbox"]
+  ##    //*[text()="file_copy"]
+
+  ## (//*[text()="Mumbai"])[4]
+
+  ##    (//*[text()="Copy"])[3]

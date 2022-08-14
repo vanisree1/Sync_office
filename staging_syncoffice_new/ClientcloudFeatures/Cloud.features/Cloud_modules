@@ -1,0 +1,131 @@
+Feature: Cloud modules
+  Scenario:Upload files to the Selected Location -
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And  I enter UserName "damawalemidc@gmail.com" And Password "Creta_123"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    And Click on Upload
+    Then Click on Upload Folder
+    Then Select the file
+    Then Click on Upload button
+    Then Search Upload file which is currently added(Cloud)
+    Then Click On Delete button
+    Then Delete Pop up opens up Enter the Password
+    Then Click on the DeleteButton
+
+  Scenario: To Preview File
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    And Hover on file
+    And cLick on preview option
+    And Click on download option and download the file
+    And Click on rename option and change the name of folder
+    Then Click on replace option and replace the file
+    Then click on link file option
+    Then click on file log option
+    Then click on share option
+    Then Click on mail and sent mail
+    Then delete the file
+
+
+  Scenario:Upload files to the Selected Location -
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    And Click on Upload
+    Then Click on Upload Folder
+    Then Select the Folder
+    Then Click on Upload button
+    Then Search Upload file which is currently added(Cloud)
+    Then Click On Delete button on folder
+    Then Delete Pop up opens up Enter the Password
+    Then Click on the DeleteButton and delete folder
+
+
+
+
+
+  Scenario: To Create a folder - Header Option
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And    I enter UserName "damawalemidc@gmail.com" And Password "Creta_123"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    And Click on Create Folder Icon
+    When  Create folder pop up opens Name a new Folder
+    Then Click On Create Button
+    Then Click on upload option
+    Then Select the file and Click on upload button
+    Then Click on mail option on header
+    Then  Enter mail id To Address
+    Then Click on CC and bcc option
+    Then Enter address on CC and bcc option
+    Then Enter subject for mail
+    Then Select the zip option
+    Then Click on add button to attach the file
+    Then Select the file from department
+    Then click on attach button
+    Then Select the checkbox which file we need to send
+    Then click on send button
+    Then Suessfully sent popup should display
+    Then Go to Folder which is currently added
+    Then Right cLick on folder and select the Delete option
+    Then Enter password
+    Then Click on delete button and popup should display Suessfully deleted
+
+
+
+  Scenario: To Search the files - Header Option
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And    I enter UserName "damawalemidc@gmail.com" And Password "Creta_123"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    And Click on Advance Search Icon
+    When Advance Search Page opens up then Select then Search File Name
+    Then Select the Date Range
+    Then Select the File Size
+    Then Select the Specific Location to Search
+    Then Click on Search
+    Then To go to the File Location Click on the File Searched
+    Then Verify
+
+
+
+
+
+
+  Scenario: To Move folder
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And    I enter UserName "damawalemidc@gmail.com" And Password "Creta_123"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    Then Select the Department in list
+    Then Click on checkbox
+    Then Click on move option
+    Then Select the location to move
+    Then Go to the move location
+    Then Select the file from move location
+    Then click on copy option
+    Then click on copy button
+    And Click on Move
+    Then Verify

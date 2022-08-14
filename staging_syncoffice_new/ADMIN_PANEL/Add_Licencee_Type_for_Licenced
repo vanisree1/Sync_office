@@ -1,0 +1,26 @@
+Feature: Admin Panel page
+  Scenario: login Admin Panel
+    Given I launch chrome browser
+    When I open Admin Panel Url "https://www.syncoffice.com/test/admin/login.php"
+    And I enter Admin Panel UserName "admin" And Password "Syncoffice@2020"
+    And I Click on Login for Admin Panel
+    Then Click on Licencee tab
+    Then Click on add Licencee icon
+    Then Licencee Master Creation page should display
+    Then Fill Basic Licencee Data
+    Then select Licence Type (Licenced)
+    Then Enter Licencee Name (Licenced)
+    Then Enter Contact Person Firstname
+    Then select the gender
+    Then Enter Lastname
+    Then Enter DOB
+    Then Enter Incorp. Date
+    Then Enter Contact Email
+    Then Enter Address,PinCode,City,State,Country
+    Then Enter Mobile Number ,Landline No
+    Then Enter PAN Number
+    Then Enter TIN number
+    Then Enter Modules Selection options
+    Then Enter Parameter Attributes(Timesheet Lock)
+    Then click on submit
+

@@ -1,0 +1,10 @@
+Feature: Clock Modules
+  Scenario: To Add GL Account
+    Given   I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "chichkotebalaji@gmail.com" And Password "123456"
+    And I Click on Login icon
+    And Click on Cloud
+    Then Click on My Cloud
+    Then click on right side
+    Then Move multiple folder

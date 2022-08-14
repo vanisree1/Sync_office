@@ -1,0 +1,18 @@
+Feature: To add Global Gl
+  Scenario: Add Global Gl
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    Then 	Hover on Right Side panel Global Gl
+    And 	Click on Global Gl
+    And 	Click on Add Button on View Global Gl
+    And 	Enter Code on Global Gl
+    And 	Enter Enter Description on Global Gl
+    And 	Click on Save on Global Gl
+    And     Search Global Gl  which is currently added
+    And     Delete Global Gl
+
+
+

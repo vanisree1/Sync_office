@@ -1,0 +1,12 @@
+Feature: To Add GL Account
+  Scenario: To Import Employee
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    Then 	Hover on Right Side panel
+    And 	Click on GL Account(Export)
+    And 	Click on Export Button on  GL Account
+    And 	Select the file from the GL Account list
+    And 	Click on Save Button 

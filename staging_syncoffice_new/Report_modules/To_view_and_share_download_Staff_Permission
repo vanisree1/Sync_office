@@ -1,0 +1,15 @@
+Feature: Report modules
+  Scenario: To_view_download_and_share_Bank_details_in_Report_module
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Report module
+    Then Report page should display
+    Then mouse over on master tab
+    Then click on favourites option on staff permission
+    ##Then click on download button and Excel file
+    Then Click on download button(Staff permission)
+    Then click on favourites
+    Then Remove from favourites list

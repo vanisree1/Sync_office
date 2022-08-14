@@ -1,0 +1,13 @@
+Feature: Password_manager
+  Scenario: upload file in client
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Password Manager tab
+    And Click on view button on client
+    Then Click on Import Icon
+    Then Click on Download sample file option
+    Then click on Upload button
+    Then Upload file on password manager

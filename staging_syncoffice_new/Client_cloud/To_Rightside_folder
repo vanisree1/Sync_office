@@ -1,0 +1,18 @@
+Feature: To Zip & Mail Any Folder from the Tree Structure
+  Scenario:To Zip & Mail Any Folder from the Tree Structure
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And  I Click on Login
+    And Click on Cloud
+    Then Click on Client Cloud
+   Then Right Click on folder to see the Details(Client Cloud)
+    Then Create folder
+    Then uplaod folder
+    Then Rename folder
+    Then Download file
+    Then click on details icon and see the Details
+    Then Click on Folder Access icon and give Access to particular user
+    Then Click on mail tab enter mail id  click on sent button
+

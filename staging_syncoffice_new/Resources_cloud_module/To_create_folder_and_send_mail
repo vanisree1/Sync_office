@@ -1,0 +1,28 @@
+Feature: To Create a folder using Header Option Icon
+  Scenario: To Create a folder - Header Option
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "abc@123"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on Resource
+    And Click on Create Folder Icon Resource
+    Then Click On Create Button
+    Then Click on upload option
+    Then Select the file and Click on upload button
+    Then Click on mail option on header
+    Then  Enter mail id To Address
+    Then Click on CC and bcc option
+    Then Enter address on CC and bcc option
+    Then Enter subject for mail
+    Then Select the zip option
+    Then Click on add button to attach the file
+    Then Select the file from department
+    Then click on attach button
+    Then Select the checkbox which file we need to send
+    Then click on send button
+    Then Go to Folder which is currently added
+    Then Right cLick on folder and select the Delete option
+    Then Enter password
+    Then Click on delete button and popup should display Suessfully deleted

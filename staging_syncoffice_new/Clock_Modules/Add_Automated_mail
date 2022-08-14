@@ -1,0 +1,223 @@
+Feature: Clock Modules
+  Scenario: To add Duration file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then click on Reports icon
+    Then Select the Automated mail setting Report option
+    Then select employee(clock)
+    Then enter External Mails
+    Then select the day
+    Then on click on save button data should save
+
+
+
+  Scenario: To Add Client
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then Click on Add Client icon
+    Then  Fill all mandatory fields in Service Type option
+    Then Fill all mandatory fields in Basic Information option
+    Then Fill all mandatory fields in Location details option
+    Then Fill all mandatory fields in Admin  option
+    Then click on submit button(clock)
+
+
+
+
+  Scenario: Add Day Type (Leave)
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And Select the Day Type
+    And Select Day Type option as-Leave
+    Then Select the Leave Type option from dropdown
+    Then Select Unassigned Task Type
+    And Select the client for (Leave)
+    And Select the Task (Leave)
+    And Enter the Hours
+    And Select the Work from location
+    And Enter Remarks(clock)
+    And Click on submit (clock)
+
+
+
+
+  Scenario: To add Exception file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then click on Reports icon
+    Then Select the Exception Report option
+    Then select the Employee(clock)
+    Then Select the Client(clock)
+    Then Select the Hours(clock)
+    Then Select the On(clock)
+    Then Select the Start_date(clock)
+    Then Click on Go(clock)
+
+
+
+
+  Scenario: To add Duration file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And Click on Filter list Icon
+    And Select Client from the list(clock)
+    And Select Employee from the list(clock)
+    Then Click on go button
+    Then varify
+    Then click on refresh Task list Icon
+
+
+
+  Scenario: Add Day Type (Holiday)
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And Select the Day Type
+    And Select Day Type option as-Holiday
+    And Enter Holiday name
+    Then Select Unassigned Task Type
+    And Select the client for (Holiday)
+    And Select the Task (Holiday)
+    And Enter the Hours
+    And Select the Work from location
+    And Enter Remarks(clock)
+
+
+
+
+  Scenario: To add Managelock,unlock
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then click on Managelock,unlock Icon
+    Then click on Add Managelock,unlock button
+    Then Add Manage Unlock,Lock page should display
+    Then Select the Employee
+    Then Enter Start date, End date,Auto date
+    Then enter discription
+    Then click on Add button then Emplyee will add suessesfully in the list
+
+
+
+  Scenario: To add new task file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then click on add new task
+    Then Main Task page should display
+    Then select the client(clock module)
+    Then Select the Lead
+    Then Enter primary task(clock)
+    Then Enter Issue Type
+    Then Set Priority and linked with option
+    Then Enter Start date nad End date(clock)
+    Then Enter Decription
+    Then Assign TO and  Hours
+    Then click on create button
+
+
+
+  Scenario: To add Partial work
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And Select the Day Type
+    And Select Day Type option as-Partial work
+    Then Select the Partial work Type option from dropdown
+    Then Select Unassigned Task Type
+    And Select the client for (Partial work)
+    And Select the Task (Partial work)
+    And Enter the Hours
+    And Select the Work from location
+    And Enter Remarks(clock)
+    And Click on submit (clock)
+
+
+
+
+
+  Scenario: To task template file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And Click on Task Template list icon
+    Then Task list page should display
+    Then Enter primary Task
+    Then Enter Summary
+    Then click on Add option
+
+
+
+
+
+
+  Scenario: To add workday file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And Select the Day Type
+    And Select the Task Type
+    And Select the Time Specific option
+    And Select the client for work day
+    And Select the Task
+    And Enter From Time and To Time
+    And Select the Work from location
+    And Enter Remarks(clock)
+    And Click on submit (clock)
+
+
+
+
+  Scenario: To add Timesheet file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then click on Reports icon
+    Then Select the Timesheet Report option
+    Then select the Employee(clock)
+    Then Select the Client(clock)
+    Then Select the Hours(clock)
+    Then Select the On(clock)
+    Then Select the Start_date(clock)
+    Then Click on Go(clock)

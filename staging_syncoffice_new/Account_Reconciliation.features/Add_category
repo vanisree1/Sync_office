@@ -1,0 +1,22 @@
+Feature:Account_Reconcilation
+  Scenario: To Add GL Category
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    Then 	Hover on Right Side panel GL Category
+    And 	Click on GL Category
+    And 	Click on Add Button on GL Category
+    And 	Enter Name on Add Account Category Drawer
+    And  	Enter Description on Account Category Drawer
+    And     save Gl category
+    And     Search Gl category which is currently added
+    And     Delete Gl category
+
+
+
+
+
+
+

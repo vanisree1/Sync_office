@@ -1,0 +1,17 @@
+Feature: To Search File(s) Advance- Header Option Icon
+  Scenario: To Search the files - Header Option
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    And Click on Advance Search Icon
+    When Advance Search Page opens up then Select then Search File Name
+    Then Select the Date Range
+    Then Select the File Size
+    Then Select the Specific Location to Search
+    Then Click on Search
+    Then To go to the File Location Click on the File Searched
+    Then Verify

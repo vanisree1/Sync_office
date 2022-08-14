@@ -1,0 +1,8 @@
+Feature: Employee_to_client
+  Scenario: To Add GL Category
+Given I launch chrome browser
+When I open Url "https://staging.syncoffice.com/module-website/login"
+And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+And I Click on Login
+And 	Click on Account ggg Reconciliation tab
+Then 	Hover on Right Side hhhhhh panel GL Category

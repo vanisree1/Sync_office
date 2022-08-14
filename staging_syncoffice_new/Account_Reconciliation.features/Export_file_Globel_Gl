@@ -1,0 +1,12 @@
+Feature: Account Reconciliation Global Gl
+  Scenario: To Add Global Gl file
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    Then 	Hover on Right Side panel Global Gl
+    And 	Click on Global Gl
+    And 	Click on Export Button on Global Gl
+    And 	Select the file from the Global Gl list(Export)
+    And 	Click on Save Button

@@ -1,0 +1,20 @@
+Feature: Account Recocilation
+  Scenario: To Add Reco Status file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And    I Click on Login
+    And 	Click on Account Reconciliation tab
+    And 	Click on Settings
+    And 	Click on Reco Status Pane
+    And 	Click on Add button on View Reco Status
+    And 	Enter the Name on Reco Status
+    And 	Enter the Description on Reco Status
+    Then 	Click on Save Button on Reco Status
+    And     Search Reco Status which is currently added
+    And     Delete Reco Status
+
+
+
+

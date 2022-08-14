@@ -1,0 +1,19 @@
+Feature: master client location
+  Scenario: To  Add Staff
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+   ## And Mouse over on module list
+    And CLick on add button on client
+    And Client-Location Registration page should display
+    And Click on add button on Client-Location Registration
+    And Fill all the mandatory field on Client-Location Registration and save
+    And Click on Edit button
+    Then Modify
+
+
+
+

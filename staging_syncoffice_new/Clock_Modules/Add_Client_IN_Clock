@@ -1,0 +1,14 @@
+Feature: Clock Modules
+  Scenario: To add Duration file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then Click on Add Client icon
+    Then  Fill all mandatory fields in Service Type option
+    Then Fill all mandatory fields in Basic Information option
+    Then Fill all mandatory fields in Location details option
+    Then Fill all mandatory fields in Admin  option
+    Then click on submit button(clock)

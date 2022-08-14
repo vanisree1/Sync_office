@@ -1,0 +1,16 @@
+Feature: master client location
+  Scenario: To  Add Staff
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And Mouse over on module list
+    And CLick on add button on client
+    Then 	 Click on Import Icon on View Client(Master)
+    Then     Download Sample file
+    Then     Click on Save Button
+    Then     Save file data
+    And     Search GL Account which is currently added
+    And     Delete GL Account

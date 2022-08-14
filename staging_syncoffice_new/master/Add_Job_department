@@ -1,0 +1,17 @@
+Feature: master_syncoffice
+  Scenario: add clents
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And CLick on add button on client
+    And 	Click on Job Department(client)
+    And 	Click on Add Button on Job Department(client)
+    And 	Enter Name on Job Department(client)
+    And  	Enter Shot code of Department on Job Department(client)
+    And    Select the activity code and Enter the job code
+    And     Search Job Department which is currently added(client)
+    And     Delete Job Department(client)
+    Then download Excel  files

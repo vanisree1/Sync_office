@@ -1,0 +1,20 @@
+Feature: Clock Modules
+  Scenario: To add Duration file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    Then click on add new task
+    Then Main Task page should display
+    Then select the client(clock module)
+    Then Select the Lead
+    Then Enter primary task(clock)
+    Then Enter Issue Type
+    Then Set Priority and linked with option
+    Then Enter Start date nad End date(clock)
+    Then Enter Decription
+    Then Assign TO and  Hours
+    Then click on create button
+

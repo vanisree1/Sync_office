@@ -1,0 +1,13 @@
+Feature: master module
+Scenario: Add Employee Type
+Given I launch chrome browser
+  When I open Url "https://staging.syncoffice.com/module-website/login"
+And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+And I Click on Login
+And Click on masters
+And click on add button Existing Employee Type page should display
+Then again click on add button Employee Type page should display
+Then Enter Depatment(Employee Type)
+Then Enter Description(Employee Type)
+Then save and varify
+  Then download Excel  files

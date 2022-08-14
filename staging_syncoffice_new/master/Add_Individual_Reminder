@@ -1,0 +1,21 @@
+Feature: master_Features
+  Scenario: Add Individual Reminder
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on general
+    And Click on Individual Reminder tab
+    Then Click add button on Individual Reminder
+    Then Enter Reminder Date
+    And Select  the Client
+    And Enter the Time for Individual Reminder
+    And Enter ReminderTask on Individual Reminder
+    Then Enter Description on Individual Reminder
+    Then Select Repeat options
+    Then Select Notify options
+    Then click on save Button and should display successful pop up
+    Then Search Individual Reminder which is currently added
+    Then Delete Individual Reminder which is currently added

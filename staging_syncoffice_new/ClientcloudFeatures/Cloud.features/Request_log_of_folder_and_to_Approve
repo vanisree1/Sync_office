@@ -1,0 +1,13 @@
+Feature: To see Request Log of folder and to Approve
+  Scenario: To see Request Log of folder and to Reject - Header Option
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "chichkotebalaji@gmail.com" And Password "123456"
+    And    I Click on login page
+    And Click on Cloud
+    Then Click on My Cloud
+    And Click on Delete Request Icon and Select Request Log
+    Then Click on My Team and Select the files to approve or Reject
+    Then Enter Remarks
+    Then Click on Approve
+    Then Verify

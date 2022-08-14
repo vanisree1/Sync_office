@@ -1,0 +1,17 @@
+Feature: Clock Modules
+  Scenario: To add Duration file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And Select the Day Type
+    And Select the Task Type
+    And Select the Time Specific option
+    And Select the client for work day
+    And Select the Task
+    And Enter From Time and To Time
+    And Select the Work from location
+    And Enter Remarks(clock)
+    And Click on submit (clock)

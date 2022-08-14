@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="144.495639">
+<testcase classname="To Add Cost Centre" name="Add Cost Centre" time="144.495639">
+<system-out><![CDATA[Given I launch chrome browser...............................................passed
+When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard".passed
+Then I Click on login button................................................passed
+And I enter UserName "damawalemidc@gmail.com" And Password "Creta_123"......passed
+And I Click on Login........................................................passed
+And Click on Account Reconciliation tab.....................................passed
+Then Hover on Right Side panel Cost Center..................................passed
+And Click on Cost Center....................................................passed
+And Click on Add Button on View Cost Center.................................passed
+And Enter Code on Cost Center...............................................passed
+And Enter Enter Description on Cost Center..................................passed
+And Enter Remarks on Cost Center............................................passed
+And Click on Save on Cost Center............................................passed
+And Search Cost Centre  which is currently added............................passed
+And Delete Cost Centre......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,14 @@
+Feature: Report modules
+  Scenario: To_view_download_and_share_company_location_in_Report_module
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Report module
+    Then Report page should display
+    Then mouse over on master tab
+    Then Click on view button staff permission tab
+    Then Click on checkbox from view list
+    Then click on download button and Excel file
+    Then varify

@@ -1,0 +1,12 @@
+Feature: To Add Cost Centre
+  Scenario: Export cost center file
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    Then 	Hover on Right Side panel Cost Center
+    And 	Click on Cost Center
+    And  	Click on Export Button on  Cost Center
+    And 	Select the file from the Cost Center list(Export)
+    And 	Click on Save Button

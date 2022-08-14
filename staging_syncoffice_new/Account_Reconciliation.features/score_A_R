@@ -1,0 +1,18 @@
+Feature: To Add Score
+  Scenario: To Add Score
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And    I Click on Login
+    And 	Click on Account Reconciliation tab
+    And 	Click on Settings Score
+    And 	Click on Score Pane
+    And 	Click on Add button on View Score
+    And 	Enter the Name
+    And 	Enter the Description Score
+    Then 	Click on Score Save Button
+    And     Search Score  which is currently added
+    And     Delete Score
+
+

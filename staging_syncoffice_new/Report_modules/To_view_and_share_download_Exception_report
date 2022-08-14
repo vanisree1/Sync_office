@@ -1,0 +1,21 @@
+Feature: Report modules
+
+  Scenario: To_view_download_and_share_Bank_details_in_Report_module
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Report module
+    Then Report page should display
+    Then mouse over on clock tab
+    Then click on favourites option on exception
+    Then Click on view button exception tab
+    Then Select the employee from dropdown(exception)
+    Then Select the client from dropdown
+    Then Select the Hours
+    Then Slect the options
+    Then select the date
+    Then click on go option
+    Then click on download
+    Then download excel and pdf file

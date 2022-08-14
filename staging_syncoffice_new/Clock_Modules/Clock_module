@@ -1,0 +1,16 @@
+Feature: Clock Modules
+  Scenario: To add Timesheet file
+    Given  I launch chrome browser
+    When   I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then   I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And    I Click on Login
+    And 	Click on Clock module
+    Then click on Reports icon
+    Then Select the Timesheet Report option
+    Then select the Employee(clock)
+    Then Select the Client(clock)
+    Then Select the Hours(clock)
+    Then Select the On(clock)
+    Then Select the Start_date(clock)
+    Then Click on Go(clock)

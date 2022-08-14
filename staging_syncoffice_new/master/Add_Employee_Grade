@@ -1,0 +1,16 @@
+Feature: master module
+  Scenario: Add Employee Grade
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And click on add button Existing Employee Grade page should display
+    Then again click on add button Employee Grade page should display
+    Then Enter Depatment(Employee Grade)
+    Then Enter Description(Employee Grade)
+    Then save and varify
+    Then download Excel  files
+
+

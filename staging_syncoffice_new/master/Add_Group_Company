@@ -1,0 +1,10 @@
+Feature: master_syncoffice
+  Scenario: Add Group company
+Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+And Click on masters
+And Go to the Group company icon
+And click on view button on Group company

@@ -1,0 +1,11 @@
+Feature: Clock Modules
+  Scenario: To add My Team
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And click on TeamWork
+    Then Select the Client(clock)
+    Then Click on Go(clock)

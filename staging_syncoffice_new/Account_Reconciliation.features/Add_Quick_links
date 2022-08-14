@@ -1,0 +1,16 @@
+Feature: verify Account Reconciliation page
+  Scenario: Add quick links
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Account Reconciliation tab
+    And Go to the quick links page
+    And Click on  view links
+    And Click on add button to add a link
+    And Enter the name for link
+    Then Enter the URL for link
+    Then Enter the comments for link
+    Then click on column selection option and verify
+    Then click on download tab
+    Then download excel and pdf link file

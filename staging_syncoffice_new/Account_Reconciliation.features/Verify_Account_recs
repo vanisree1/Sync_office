@@ -1,0 +1,9 @@
+Feature: verify Account Reconciliation page
+  Scenario: Add quick links
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "Chichkotebalaji@gmail.com" And Password "123456"
+    And    I Click on login page
+    And Click on Account Reconciliation tab
+    And Go to the Account Recs page

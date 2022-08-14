@@ -1,0 +1,12 @@
+Feature: To Upload Folder to the Selected Location
+  Scenario:Upload folder to the Selected Location -
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on My Cloud
+    And Click on Upload
+    Then Click on Upload Folder
+    Then Upload multiple file upload

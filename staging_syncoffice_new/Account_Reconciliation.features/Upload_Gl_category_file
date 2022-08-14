@@ -1,0 +1,21 @@
+Feature:To Add GL Category
+  Scenario: To Add GL Category file
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    Then 	Hover on Right Side panel GL Category
+    And 	Click on GL Category bulk data
+    And 	Click on Import Icon on View GL Category
+    And 	Select the file from the GL Category list
+    And 	Click on Save Button on GL Category
+    And 	Save  data on GL Category
+    And     Search Gl category file which is currently added
+    And     Delete Gl category file
+    Then 	Verify upload file
+
+
+
+

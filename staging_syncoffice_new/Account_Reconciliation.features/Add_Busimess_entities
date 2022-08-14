@@ -1,0 +1,15 @@
+Feature: verify Account Reconciliation page
+  Scenario: Add quick links
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Account Reconciliation tab
+    And Go to the Business entities page
+    Then move to the toggle button legal Entity side
+    Then click on add button for adding a legal entity
+    Then fill all mandotry fileds and click on save and verify
+    Then search details which we have currently added
+    Then click on edit button and modify the details
+    Then click on download to download the files
+    Then click on location log

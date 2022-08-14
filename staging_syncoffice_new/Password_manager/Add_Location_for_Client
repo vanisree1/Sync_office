@@ -1,0 +1,18 @@
+Feature: Password_manager
+  Scenario: To add Client location
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "abc@123"
+    And    I Click on login page
+    And Click on Password Manager tab
+    And Click on add button on particular Client
+    And Click on add button
+    Then Select the Client from Client Location
+    Then Enter Location Name
+    Then Select Contact Person
+    Then Select Department for Client
+    Then Enter address for Client
+    Then Enter City ,State,Country
+    Then Enter email id ,number for client
+    Then  varify

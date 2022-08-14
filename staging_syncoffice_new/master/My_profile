@@ -1,0 +1,16 @@
+Feature: master_syncoffice
+  Scenario: add password
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And click on my profile
+    ##And Enter Current password
+    ##And Enter new password
+    ##And Enter confirm password
+    ##And Click on submit and verify
+    ##And log out the application
+    ##Then I Click on login button
+    ##And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    #And I Click on Login
+    #And Again login the application

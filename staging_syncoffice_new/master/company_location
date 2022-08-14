@@ -1,0 +1,16 @@
+Feature: master_Features
+Scenario: Add Company Location
+  Given I launch chrome browser
+  When I open Url "https://staging.syncoffice.com/module-website/login"
+  ##  Then I Click on login button
+  And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+  And I Click on Login
+  And Click on masters
+And should display company Location page
+Then click on Add button should open Add company Location
+When Fill all the mandatory field should enable save button
+Then on click on save button data should save
+  And    Search company Location which is currently added
+  And     Delete company Location
+  Then download pdf and excel files
+

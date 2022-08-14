@@ -1,0 +1,22 @@
+Feature: master_Features
+  Scenario: Add button Bank Details
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+  ##  Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on general
+    And  should display Bank Details page
+    Then click on Add button should open Bank Details
+    Then Enter Bank Name
+    And Enter Branch Name
+    And Enter Branch IFSC code
+    And Enter Current AC Number
+    And SWIFT Code on Bank Details
+    And Enter Description on Bank Details
+    Then  click on save button on
+    And    Search Bank Details which is currently added
+    And     Delete Bank Details which is currently added
+    Then download Excel  files
+

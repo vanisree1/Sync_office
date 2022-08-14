@@ -1,0 +1,19 @@
+Feature:To  Preview File
+  Scenario: To Preview File
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on Client Cloud
+    And cLick on mouse over on file
+    And Click on download option and download the file
+    And Click on rename option and change the name of folder
+    Then Click on replace option and replace the file
+    Then click on link file option
+    Then click on file log option
+    Then click on share option
+    Then Click on mail and sent mail
+    Then delete the file
+

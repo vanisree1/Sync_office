@@ -1,0 +1,14 @@
+Feature: cloud module
+  Scenario: Employee_to_company
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "chichkotebalaji@gmail.com" And Password "123456"
+    And    I Click on login page
+    And Click on Cloud
+    Then Click on My Cloud
+    Then Click on more icon
+    Then click on Employee to Company tab
+    Then  Select the  emplaoyee
+    Then  Select the  Company (cloud)
+    Then click download button and download the file
+    Then click on submit button

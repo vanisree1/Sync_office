@@ -1,0 +1,21 @@
+Feature: Roles_and_permission_employee_permission
+  Scenario: Set Roles and Permission (All Modules)
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+  ##  Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    ##And Mouse over on module list
+    Then Click on Roles and Permissions tab
+    And Click on the Employee Permissions SubTab
+    Then  Click on the Basic admin check Box to allow the employee to the View Options
+  ##  Then Search the Specific name into the Search Employee field
+   ## Then	Click on the Go Button to  Search Employee(s)
+    ##Then   Uncheck  all the unwanted modules checked from the Searched Employee
+    ##Then  Click on submit on Employee Permssions
+## for confirmation
+    ##Then  	Login to the Employee using Node employees Details
+    ##Then	Click on the Roles and Permssions (Should be able to view the page )
+    ##Then 	Click on the Roles and Permssions >> Employee Permssions
+    ##Then 	On Clicking on go should display Permission Denied

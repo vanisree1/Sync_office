@@ -1,0 +1,19 @@
+Feature: master_Features
+  Scenario: Add Company Location
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-dashboard/dashboard"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on masters
+    And mouse over on  desigation tab
+    And click on add button Existing Designations page should display
+    Then again click on add button Add Designation page should display
+    Then Enter Designation
+    Then Enter Description
+    Then save and varify
+    Then download Excel  files
+
+
+
+
+

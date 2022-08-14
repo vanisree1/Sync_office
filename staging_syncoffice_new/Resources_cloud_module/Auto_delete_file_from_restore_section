@@ -1,0 +1,121 @@
+Feature: To Set days to auto delete files from Restore Section- Header Option Icon
+  Scenario: To Set days to auto delete files from Restore Section - Header Option
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on Resource
+    And Click on Restore Icon Resource
+    When Restore Drawer opens up then Enter the Days Cycle to Delete the Files
+    Then Click on Save
+    Then Verify
+
+
+
+  Scenario: To Preview File
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "abc@123"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on Resource
+    And Hover on file Resource
+    And cLick on preview option
+    And Click on download option and download the file
+    And Click on rename option and change the name of folder
+    Then Click on replace option and replace the file
+    Then click on link file option
+    Then click on file log option
+    Then click on share option
+    Then Click on mail and sent mail
+    Then delete the file
+
+
+
+
+
+  Scenario:To Zip & Mail Any Folder from the Tree Structure
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And  I Click on Login
+    And Click on Cloud
+    Then Click on Resource
+    Then Right Click on folder to see the Details(Resource)
+    Then Create folder
+    Then uplaod folder
+    Then Rename folder
+    Then Download file
+    Then click on details icon and see the Details
+    Then Click on Folder Access icon and give Access to particular user
+    Then Click on mail tab enter mail id  click on sent button
+
+
+
+
+
+
+
+
+
+  Scenario: To Create a folder - Header Option
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "abc@123"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on Resource
+    And Click on Create Folder Icon Resource
+    Then Click On Create Button
+    Then Click on upload option
+    Then Select the file and Click on upload button
+    Then Click on mail option on header
+    Then  Enter mail id To Address
+    Then Click on CC and bcc option
+    Then Enter address on CC and bcc option
+    Then Enter subject for mail
+    Then Select the zip option
+    Then Click on add button to attach the file
+    Then Select the file from department
+    Then click on attach button
+    Then Select the checkbox which file we need to send
+    Then click on send button
+    Then Go to Folder which is currently added
+    Then Right cLick on folder and select the Delete option
+    Then Enter password
+    Then Click on delete button and popup should display Suessfully deleted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Scenario: To Set the Limit to the employee to Download and Upload
+    Given I launch chrome browser
+    When I open Url "https://www.syncoffice.com/module-test-dashboard/dashboard"
+    Then I Click on login button
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on Resource
+    And Click on Limit Icon
+    When Select the data Range to upload and Download in Upload Limit and Download Limit
+    Then Select the Data Unit
+    And Seact the File Type
+    Then Select the Select the employees to Apply the Data count
+    Then Click on Limit Button to Use common Selection for Multiple and Select Employee
+    Then Click on Save button
+    Then Verify Limit option

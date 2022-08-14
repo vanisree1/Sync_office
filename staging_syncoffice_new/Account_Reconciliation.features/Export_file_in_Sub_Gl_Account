@@ -1,0 +1,12 @@
+Feature: To Add GL Account
+  Scenario: Export Sub Gl Account file
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Account Reconciliation tab
+    Then 	Hover on Right Side panel GL Category
+    And 	Click on Sub Gl Account(export)
+    And 	Click on Export Button on  Sub Gl Account
+    And 	Select the file from the Sub Gl Account list(Export)
+    And 	Click on Save Button

@@ -1,0 +1,18 @@
+Feature: To Paste Any Copied data
+  Scenario: To Paste any Copied or Cutted Data
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "chichkotebalaji@gmail.com" And Password "123456"
+    And I Click on Login
+    And Click on Cloud
+    Then Click on Client Cloud
+    Then Right Click on folder (Level 3)
+    And Click on More
+    Then  Click on Paste
+    Then Verify
+
+#//*[text()="Zip & Mail"]
+  #(//*[text()="More"])[2]
+  # (//*[text()="Copy"])[2]
+  #(//*[text()="Administration"])[2]
+  #(//*[text()="Paste"])

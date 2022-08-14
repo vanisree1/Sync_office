@@ -1,0 +1,14 @@
+Feature: Clock Modules
+  Scenario: To add Duration file
+    Given  I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+##    Then    I Click on login button
+    And     I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module
+    And Click on Filter list Icon
+    And Select Client from the list(clock)
+    And Select Employee from the list(clock)
+    Then Click on go button
+    Then varify
+    Then click on refresh Task list Icon

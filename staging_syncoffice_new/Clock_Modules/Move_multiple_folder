@@ -1,0 +1,7 @@
+Feature: Clock Modules
+  Scenario: To Add GL Account
+    Given   I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+    And 	Click on Clock module

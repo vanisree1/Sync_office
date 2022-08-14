@@ -1,0 +1,12 @@
+Feature: To Add GL Account
+  Scenario: To Add Employee
+    Given I launch chrome browser
+    When I open Url "https://staging.syncoffice.com/module-website/login"
+    And I enter UserName "sarika.mishra@candytechnologies.in" And Password "123456"
+    And I Click on Login
+And 	Click on Account Reconciliation tab
+    And  Hover on Right Side panel Employee
+    And Click on Export Button on  Employee
+    And Select the file from the list
+And 	Click on Save Button
+Then 	Verify  Employee file
